@@ -26,25 +26,11 @@
         }
     </style>
 
-    <!-- custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                btncol:'#FF4240',
-                inpbac:'#0D0D127A',
-                pgcol:'#13131899',
-              }
-            }
-          }
-        }
-      </script>
+   
 
 </head>
 <body>
-    <header class="">
+    <header>
 
             <!-- navbar section starts  -->
             <nav>
@@ -85,7 +71,7 @@
             <!-- carosoul slide -->
           <section>
             
-            <div class="container mx-auto relative">
+            <div class="container mx-auto relative ">
 
               <div class="carousel w-full mt-4 rounded-2xl">
                 <!-- slide-1 -->
@@ -656,73 +642,191 @@
           <hr class=" border-dashed border-2 mt-8 ml-4 mr-2 lg:ml-12 lg:mr-12">
 
 
-
-          <div class="flex  flex-col lg:flex-row gap-20 ml-0 mr-0 lg:ml-12 lg:mr-12">
-
-            <div class="border-2 rounded-lg py-12 px-16 mt-16 flex  flex-col gap-4 ">
-                <div class="bg-slate-200  rounded-lg py-8 px-8 w-[300px]" >
-                  <img src="Images/Group 1171275317.png" alt="">
-                  <h3 class="text-slate-400 font-blod text-xl mt-2 ">Phone Number : </h3>
-                  <p class="text-black font-semibold text-xl">(+62) 123-321-543</p>
+            <!-- login Form section -->
+    
+            <div class="flex flex-col lg:flex-row rounded-2xl mt-12 gap-6 justify-between">
+    
+                <div class=" flex flex-col gap-6 border-2 lg:p-12 p-6 rounded-2xl ml-2 lg:ml-0">
+    
+                    <!-- card-1  -->
+                    <div class="bg-[#BCED6D1A] flex flex-col gap-6 rounded-2xl px-8 pt-8 pb-12 ">
+                        <div>
+                            <img src="./Images/Group 1171275317.png" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="text-base font-normal text-pgcol">Phone Number : </p>
+                            <h3 class="text-lg font-extrabold">(+62) 123-321-543</h3>
+                        </div>
+                    </div>
+                    <!-- card-2  -->
+                    <div class="bg-[#FDDD5F1A] flex flex-col gap-6 rounded-2xl px-8 pt-8 pb-12 ">
+                        <div>
+                            <img src="./Images/Group 1171275318.png" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="text-base font-normal text-pgcol">Email : </p>
+                            <h3 class="text-lg font-extrabold">hockeys@support.com</h3>
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="bg-[#629CF31A] flex flex-col gap-6 rounded-2xl px-8 pt-8 pb-12 ">
+                        <div>
+                            <img src="./Images/Group 1171275321.png" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="text-base font-normal text-pgcol">Location : </p>
+                            <h3 class="text-lg font-extrabold">152/1 Mohakhali Wireless Gate</h3>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="bg-slate-200  rounded-lg  py-8 px-8 w-[300px]" >
-                  <img src="Images/Group 1171275318.png" alt="">
-                  <h3 class="text-slate-400 font-blod text-xl mt-2 ">Phone Number : </h3>
-                  <p class="text-black font-semibold text-xl">(+62) 123-321-543</p>
+    
+                <!-- --------------------------------------- -->
+                <div class=" grid gap-6 grid-cols-1 lg:grid-cols-2 flex-1 ml-2 lg:ml-0">
+    
+                    <div class=" flex flex-col gap-4">
+                        <div>
+                            <h1 class="text-xl font-bold">Your Name</h1>
+                        </div>
+                        <div class="py-5 pl-5 rounded-xl bg-[#13131808]"><input class="bg-[#13131800] outline-none"
+                                type="text" placeholder="Enter your full name"></div>
+                    </div>
+    
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <h1 class="text-xl font-bold">Your Email</h1>
+                        </div>
+                        <div class="py-5 pl-5 rounded-xl bg-[#13131808]"><input class="bg-[#13131800] outline-none"
+                                type="text" placeholder="Enter your full email"></div>
+                    </div>
+    
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <h1 class="text-xl font-bold">Subject</h1>
+                        </div>
+                        <div class="py-5 pl-5 rounded-xl bg-[#13131808]"><input class="bg-[#13131800] outline-none"
+                                type="text" placeholder="Enter your full subject"></div>
+                    </div>
+    
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <h1 class="text-xl font-bold">Phone Number</h1>
+                        </div>
+                        <div class="py-5 pl-5 rounded-xl bg-[#13131808]"><input class="bg-[#13131800] outline-none"
+                                type="text" placeholder="Enter your full phone Number"></div>
+                    </div>
+    
+                    <div class="lg:col-span-2 flex flex-col gap-4">
+                        <div>
+                            <h1 class="text-xl font-bold">Message</h1>
+                        </div>
+                        <div class=" rounded-xl bg-[#13131808]"><textarea
+                                class="resize-none outline-none bg-[#13131800] pt-5 px-5 w-full" name="" id="" cols="40"
+                                rows="12"></textarea></div>
+                    </div>
+    
+                    <div class=" lg:col-span-2 bg-red-500 rounded-xl flex justify-center items-center">
+                        <div><button class="text-white text-xl font-bold py-2"><a href="">Send Message</a></button>
+                        </div>
+                    </div>
+    
+    
                 </div>
-
-                <div class="bg-slate-200  rounded-lg  py-8 px-8 w-[300px]" >
-                  <img src="Images/Group 1171275321.png" alt="">
-                  <h3 class="text-slate-400 font-blod text-xl mt-2 ">Phone Number : </h3>
-                  <p class="text-black font-semibold text-xl">(+62) 123-321-543</p>
-                </div>
-
+    
             </div>
+    
+        </div>
 
-            <div class="mt-16 ">
-              
-              <div class="grid grid-rows-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <h2 class="text-black font-semibold text-xl mb-2">Your Name</h2>
-                  <input class="bg-slate-200  border-none rounded-lg  py-6 px-20" type="text" placeholder="Enter your full name">
-                </div>
-  
-                <div>
-                  <h2 class="text-black font-semibold text-xl mb-2">Your Email</h2>
-                  <input class="bg-slate-200 rounded-lg border-none py-6 px-20" type="Email" placeholder="Enter your email">
-                </div>
-  
-                <div>
-                  <h2 class="text-black font-semibold text-xl mb-2">Your Subject</h2>
-                  <input class="bg-slate-200 rounded-lg border-none py-6 px-20" type="text" placeholder="Enter your subject">
-                </div>
-  
-                <div>
-                  <h2 class="text-black font-semibold text-xl mb-2">Your Phone</h2>
-                  <input class="bg-slate-200 rounded-lg border-none py-6 px-20" type="number" placeholder="Enter your phone">
-                </div>
 
-                <div class="col-span-2">
-                  <h2 class="text-black font-semibold text-xl mb-2 mt-2 ml-4 lg:ml-0" >Message</h2>
-                <input class="bg-slate-200 rounded-lg border-none pt-4 pb-52 pl-4 ml-4 lg:ml-0 mt-8 w-[450px] lg:w-[710px]" type="text" placeholder="Write your Message">
-                </div>
+          </section>
 
+
+
+
+          <!-- socail media section -->
+
+          <section class="container mx-auto">
+            <div class="bg-slate-200 mt-20 rounded-xl ml-2 lg:ml-0">
+              <div>
+                <h2 class="text-slate-900 text-2xl text-center pt-12 pb-6 font-bold">Social Media</h2>
               </div>
 
-              <button class="text-white font-bold bg-red-500 py-6 rounded-lg ml-4 lg:ml-0 mt-8 w-[450px] lg:w-[710px]">Send Massage</button>
+              <div class="flex justify-center gap-8 pb-12">
+                <i class="fa-brands fa-twitter text-4xl"></i>
+                <i class="fa-brands fa-facebook text-4xl"></i>
+                <i class="fa-brands fa-instagram text-4xl"></i>
+                <i class="fa-brands fa-github text-4xl"></i>
+              </div>
 
             </div>
-
-
-          </div>
-
 
           </section>
            
   
     </main>
+
+
+    <!-- footer -->
     <footer>
+        
+
+      <div class="bg-black mt-20 grid grid-cols-2 lg:grid-cols-3 gap-16 py-16 items-start justify-center ml-2 lg:ml-0 lg:pl-20 pl-0">
+
+        <div class="col-span-2 lg:col-span-1 text-center lg:text-left">
+          <h1 class="text-4xl text-white font-bold">Get In Touch</h1>
+          <p class="text-2xl text-slate-200 pt-4">Dit amet consectetur. Condiment<br>
+            adipiscing aliquam turpis placerat.<br>
+            Purus urna in sit nullam proin.
+          </p>
+          <div class="flex items-center justify-center lg:justify-start mt-2">
+            <i class="fa-regular fa-envelope text-red-400 text-4xl"></i>
+            <span class="text-xl text-slate-200 ml-2">hockeys@support.com</span>
+          </div>
+          <div class="flex items-center justify-center lg:justify-start mt-2">
+            <i class="fa-solid fa-phone text-red-400 text-4xl"></i>
+            <span class="text-xl text-slate-200 ml-2">(+62) 123-321-543</span>
+          </div>
+        </div>
+      
+        <div class="flex flex-1  justify-center gap-20 lg:pl-24 pl-60">
+          <div class="text-center lg:text-left mt-8 lg:mt-0">
+            <h1 class="text-4xl text-white font-bold">Company</h1>
+            <ul class="text-slate-400 mt-6">
+              <li class="mb-2"><a href="#">About us</a></li>
+              <li class="mb-2"><a href="#">Leadership</a></li>
+              <li class="mb-2"><a href="#">Careers</a></li>
+              <li class="mb-2"><a href="#">News & Article</a></li>
+              <li class="mb-2"><a href="#">News & Article</a></li>
+            </ul>
+          </div>
+      
+          <div class="text-center lg:text-left mt-8 lg:mt-0">
+            <h1 class="text-4xl text-white font-bold">Support</h1>
+            <ul class="text-slate-400 mt-6">
+              <li class="mb-2"><a href="#">Help Center</a></li>
+              <li class="mb-2"><a href="#">FAQ</a></li>
+              <li class="mb-2"><a href="#">Ticket Support</a></li>
+              <li class="mb-2"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-span-2 lg:col-span-1 text-center lg:text-left mt-8 lg:mt-0 lg:pl-24 pl-0">
+          <h1 class="text-4xl text-white font-bold">Services</h1>
+          <ul class="text-slate-400 mt-6">
+            <li class="mb-2"><a href="#">Academy</a></li>
+            <li class="mb-2"><a href="#">Group Lesson</a></li>
+            <li class="mb-2"><a href="#">Private Lesson</a></li>
+            <li class="mb-2"><a href="#">Hockeys for kids</a></li>
+            <li class="mb-2"><a href="#">Hockeys for Adult</a></li>
+          </ul>
+        </div>
+      
+      </div>
+      
+
 
     </footer>
 
